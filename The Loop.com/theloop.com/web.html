@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .collapsible {
+      background-color: black;
+      color: red;
+      cursor: pointer;
+      padding: 18px;
+      width: 80%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: blue;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="web.js">
+
+  <link rel="stylesheet" type="text/css" href="web.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>website</title>
+</head>
+
+<body>
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  </div>
+
+  <div style="background: black; color: white;">
+    <center>
+      <h3>
+
+        Join the loop->
+      </h3>
+    </center>
+  </div>
+  <center><input type="text" placeholder=" Search job"></center>
+  <div>
+    <h1>Jobs Avalible:</h1 >
+    <h3>Graphic Designer</h3>
+    <h3>Web & digital Designer</h3>
+    <h3>Acount Manager</h3>
+    <h3>Vedio producer</h3>
+    <h3>Other Talent</h3>
+  </div>
+  <div style="background: black; color: white; height: 90px; font-size: 20px;">
+    <h2>
+      <center>
+
+        <pre>
+
+     Reason to Join with the  loop -->
+   </pre>
+    </h2>
+    </center>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img src="rec.png" alt="Snow" style="width:100%" height="630px">
+
+    </div>
+    <div class="column">
+      <h1>Trusted by Athorized Organizations!</h1>
+      <h3>
+        World leading companies trust The Loop when hiring creative professionals!
+      </h3>
+      <div><img src="1.png" height="70px" width="70px">
+        <img src="2.png" height="70px" width="70px">
+        <img src="3.jpg" height="70px" width="70px">
+        <img src="4.png" height="70px" width="70px">
+
+
+      </div>
+      <h1>Frquently Asked Questions</h1>
+
+      <button type="button" class="collapsible">
+        <pre>What is the Loop?                               ^</pre>
+      </button>
+      <div class="content">
+        <p>The Loop is an online community for discovering and connecting with designers and creative talent in
+          Australia. Over 130,000 active creative professionals are ready to work on your next project.</p>
+      </div>
+
+
+      <button type="button" class="collapsible">
+        <pre>What does it Work?                              ^</pre>
+      </button>
+      <div class="content">
+        <p>Connect your business with the best creative people by posting a job and shortlisting applicants who meet
+          your requirements. If you see a profile that catches your eye simply send a direct message. You always own the
+          relationship with the people you contact or hire. No hidden fees or ongoing commissions.</p>
+      </div>
+      <button type="button" class="collapsible">
+        <pre>Why Should Consider the loop?                   ^</pre>
+      </button>
+      <div class="content">
+        <p>The Loop has highly skilled creative talent specialising in design, video production, and social media
+          marketing right through to illustration, copywriting and animation to help grow your business. Real-time
+          portfolios and profiles reduces the time and cost it takes to source quality employees. Download the Media Kit
+        </p>
+      </div>
+      <button type="button" class="collapsible">
+        <pre>what does it costs?                             ^</pre>
+      </button>
+      <div class="content">
+        <p>$119 per job ad
+          All Jobs types: Full Time, Part Time, Freelance, Internships
+          Categorise, preview and publish your job ad in 3 minutes and 15 seconds.</p>
+      </div>
+      </p>
+
+    </div>                      
+
+  </div>
+
+  <h2>Create a Salary Report for Jobs</h2>
+  <label for="cars" style="align:right;">Choose an option:</label>
+
+  <select name="cars" id="cars">
+    <option value="volvo">Junior</option>
+    <option value="saab">Middle level</option>
+    <option value="mercedes">Senior</option>
+    <option value="audi">Old</option>
+  </select>
+  <select>
+    <option value="volvo">Web Developer</option>
+    <option value="saab">App Developer</option>
+    <option value="mercedes">Software Engginer</option>
+    <option value="audi">AI Master</option>
+
+  </select>
+  <select>
+    <option value="volvo">Bahawalpur</option>
+    <option value="saab">Lahore</option>
+    <option value="mercedes">Karachi</option>
+    <option value="audi">Peshawar</option>
+
+  </select>
+
+  <button class="button">Create Report</button>
+
+
+  </div>
+
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>
